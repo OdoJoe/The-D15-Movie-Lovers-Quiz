@@ -1,3 +1,9 @@
+/* default visibility properties of elements */
+
+#default-hidden {
+	visibility: hidden;
+}
+
 /* background color on game div, score divs and title and join us h2 */
 body {
     background-color: #2E2931;

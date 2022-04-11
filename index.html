@@ -13,8 +13,14 @@
     <h1 id="game-title">The D15 Movie Lovers Quiz</h1>
     <h2>
         <a href="https://odojoe.github.io/d15-movie-lovers-club/" target="blank" id="visit">Visit our main page and join our club</a>
-        </h2>     
-    <div id="game-screen">
+        </h2>
+    <div id="welcome-screen" class="default-hidden">
+        <button id="btn-start">Start Quiz</button>
+        <button id="btn-rules">See Rules</button>
+    </div>
+    <div id="rules-screen" class="default-hidden">my rules</div>
+    <div id="results-screen" class="default-hidden">my results</div>     
+    <div id="game-screen" class="default-hidden">
             <div class="questions">
                 <span>How many Star Wars movies released theatrically?</span>
             </div>
@@ -30,15 +36,12 @@
             <div class="answers">
                 <span>12</span>
             </div>
-        <button class="btn-start">Start Quiz</button>
-        <button class="btn-rules">See Rules</button>
-    </div>
-
-    <div id="game-score-correct">
+   <div id="game-score-correct">
         <p>correct answers: <span id="correct">0</span></p>
-    </div>
+   </div>
     <div id="game-score-incorrect">
         <p>incorrect answers: <span id="incorrect">0</span></p>
+    </div>
     </div>
     <br>
     <div id="join">
