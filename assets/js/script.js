@@ -21,6 +21,43 @@ let questions = [{
     }
 
 ];
+
+//quiz final screen show results
+function showResults() {
+    document.getElementsByClassName('game-screen').style.visibility = 'hidden';
+    let successMessage = ''
+    let percentage = (correctCount / questions.length) * 100;
+    if (percentage > 50) {
+       successMessage = "Well done, you're a Movie Buff";
+    } else {
+        successMessage = "Hard Luck, Try again";
+    }
+}
+
+//display correct and incorrect counters
+function showAnswerCounters() {
+    let resultsDiv = document.createElement('div');
+    resultsDiv.innerHTML = 'Correct Answers:' + correctCount + '<br>Incorrect Answers:' + incorrectCount;
+    document.getElementById('game-screen').appendChild(resultsDiv);
+}
+
+//decide and record user correct answer
+function recordAnswer() {
+    let options = document.getElementsByName('option');
+    let userAnswer = '-1';
+    for (i = 0; i < options.length; i++) {
+        if (options[i].checked === true)
+            userAnswer = options[i].value;
+    }
+    
+    
+    if (userAnswer == questions[questionIndex].correctIndex){
+        correctCount++;
+    } else {
+        incorrectCount++;
+    }
+}
+
 //decides what to do whem the user submits an answer
 function handleAnswer() {
     let options = document.getElementsByName('option');
@@ -31,6 +68,7 @@ function handleAnswer() {
     }
 
     if (userSubmittedAnswer) {
+        recordAnswer();
         questionIndex++;
         if (questionIndex === questions.length) {
             alert('all done');
@@ -58,6 +96,7 @@ function showQuestion(index) {
         thisOptionRadio.type = 'radio';
         thisOptionRadio.id = 'option' + index + '-' + i;
         thisOptionRadio.name = 'option';
+        thisOptionRadio.value = i;
 
         let thisOptionLabel = document.createElement('label');
         thisOptionLabel.for = thisOptionRadio.id;
@@ -73,6 +112,7 @@ function showQuestion(index) {
     thisQuestionButton.innerHTML = 'submit';
     document.getElementById('game-screen').appendChild(thisQuestionButton);
     thisQuestionButton.addEventListener('click', handleAnswer);
+    showAnswerCounters();
 }
 //start or reset the page
 function initialisePage() {
