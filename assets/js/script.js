@@ -24,7 +24,7 @@ let questions = [{
 
 //quiz final screen show results
 function showResults() {
-    document.getElementsByClassName('game-screen').style.visibility = 'hidden';
+    document.getElementById('game-screen').style.visibility = 'hidden';
     let successMessage = ''
     let percentage = (correctCount / questions.length) * 100;
     if (percentage > 50) {
@@ -32,6 +32,14 @@ function showResults() {
     } else {
         successMessage = "Hard Luck, Try again";
     }
+    document.getElementById('results-screen').innerHTML = successMessage;
+
+    let retryButton = document.createElement('button');
+    retryButton.innerHTML = 'Try Again';
+    document.getElementById('results-screen').appendChild(retryButton);
+    retryButton.addEventListener('click', resetPage);
+
+    document.getElementById('results-screen').style.visibility = 'visible';
 }
 
 //display correct and incorrect counters
@@ -71,7 +79,7 @@ function handleAnswer() {
         recordAnswer();
         questionIndex++;
         if (questionIndex === questions.length) {
-            alert('all done');
+            showResults();
         } else {
             showQuestion(questionIndex);
         }
@@ -85,7 +93,7 @@ function handleAnswer() {
 function showQuestion(index) {
     document.getElementById('game-screen').innerHTML = "";
     let questionDiv = document.createElement('div');
-    questionDiv.innerHTML = questions[index].text;
+    questionDiv.innerHTML = "Question " + (questionIndex+1) + "<br>" + questions[questionIndex].text;
     document.getElementById('game-screen').appendChild(questionDiv);
 
     let questionForm = document.createElement('form');
@@ -139,5 +147,9 @@ function showWelcome() {
     document.getElementById('welcome-screen').style.visibility = 'visible';
 }
 
-initialisePage();
-showWelcome();
+function resetPage(){
+    initialisePage();
+    showWelcome();
+}
+
+resetPage();
