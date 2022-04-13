@@ -5,19 +5,54 @@ let incorrectCount = 0;
 
 // list of questions
 let questions = [{
-        "text": "1 How many Star Wars movies released theatrically?",
-        "correctIndex": 0,
-        "options": ["6", "12", "3", "9"]
-    },
-    {
-        "text": "2 How many Star Wars movies released theatrically?",
+        "text": "How many Star Wars movies released theatrically?",
         "correctIndex": 1,
         "options": ["6", "12", "3", "9"]
     },
     {
-        "text": "3 How many Star Wars movies released theatrically?",
+        "text": "How many Oscars has Steven Spielberg won in his career?",
         "correctIndex": 2,
-        "options": ["6", "12", "3", "9"]
+        "options": ["3", "16", "4", "2"]
+    },
+    {
+        "text": "What is the name of Kurt Russell's character in Big Trouble in Little China?",
+        "correctIndex": 1,
+        "options": ["Jack Napier", "Jack Burton", "Jack Torrance", "Jack Traver"]
+    },
+    {
+        "text": "Name the prolific Italian horror director famed for his unique 'Giallo' movies?",
+        "correctIndex": 3,
+        "options": ["Federico Fellini", "Franco Zeffirelli", "Sergio Leone", "Dario Argento"]
+    },
+    {
+        "text": "The rough and grizzled Quint from Steven Spielbergs Jaws was played by?",
+        "correctIndex": 1,
+        "options": ["Robert Logia", "Robert Shaw", "Robert Redford", "Robert Duvall"]
+    },
+    {
+        "text": "Who directed the sci-fi horror movie classic The Thing?",
+        "correctIndex": 0,
+        "options": ["John Carpenter", "Ivan Reitman", "James Cameron", "Peter Hyams"]
+    },
+    {
+        "text": "William Friedken's classic movie 'Sorcerer' while widely regarded as a classic today was panned on its release. Do you know what year the movie released? ",
+        "correctIndex": 3,
+        "options": ["1971", "1969", "1973", "1977"]
+    },
+    {
+        "text": "How many films did Bruce Lee star in before his untimely death in 1973?",
+        "correctIndex": 2,
+        "options": ["4", "2", "5", "7"]
+    },
+    {
+        "text": "Who played the 'man with no name' in the Sergio Leone classic 'Once Upon a Time in the West?",
+        "correctIndex": 2,
+        "options": ["Clint Eastwood", "James Caan", "Charles Bronson", "Lee Van Cleef"]
+    },
+    {
+        "text": "Sammo Hung, Jackie Chan and which other famous Hong Kong cinema action star completes the trio commonly referred to as 'The Three Dragons'?",
+        "correctIndex": 1,
+        "options": ["Donnie Yen", "Yuen Biao", "Jet Li", "Lau Kar-Wing"]
     }
 
 ];
