@@ -67,7 +67,7 @@ function showResults() {
     } else {
         successMessage = "Hard Luck, Try again";
     }
-    document.getElementById('results-screen').innerHTML = successMessage;
+    document.getElementById('results-screen').innerHTML = '<p class="result-text">' + successMessage + '</p>';
 
     let retryButton = document.createElement('button');
     retryButton.innerHTML = 'Try Again';
@@ -80,7 +80,7 @@ function showResults() {
 //display correct and incorrect counters
 function showAnswerCounters() {
     let resultsDiv = document.createElement('div');
-    resultsDiv.innerHTML = 'Correct Answers:' + correctCount + '<br>Incorrect Answers:' + incorrectCount;
+    resultsDiv.innerHTML = '<p>Correct Answers:' + correctCount + '<br>Incorrect Answers:' + incorrectCount + '</p>';
     document.getElementById('game-screen').appendChild(resultsDiv);
 }
 
@@ -128,10 +128,11 @@ function handleAnswer() {
 function showQuestion(index) {
     document.getElementById('game-screen').innerHTML = "";
     let questionDiv = document.createElement('div');
-    questionDiv.innerHTML = "Question " + (questionIndex+1) + "<br>" + questions[questionIndex].text;
+    questionDiv.innerHTML = "<p class='question-heading'>Question " + (questionIndex+1) + "</p><p>" + questions[questionIndex].text + "</p>";
     document.getElementById('game-screen').appendChild(questionDiv);
 
     let questionForm = document.createElement('form');
+    questionForm.className = 'answers-form';
     document.getElementById('game-screen').appendChild(questionForm);
 
     for (i = 0; i < questions[index].options.length; i++) {
@@ -150,6 +151,8 @@ function showQuestion(index) {
         questionForm.appendChild(thisOptionLabel);
         questionForm.appendChild(thisOptionBr);
     }
+    let br = document.createElement('br');
+    document.getElementById('game-screen').appendChild(br);
 
     let thisQuestionButton = document.createElement('button');
     thisQuestionButton.innerHTML = 'submit';
@@ -163,13 +166,25 @@ function initialisePage() {
     document.getElementById('game-screen').style.visibility = 'hidden';
     document.getElementById('rules-screen').style.visibility = 'hidden';
     document.getElementById('results-screen').style.visibility = 'hidden';
+    document.getElementById('rules-screen').innerHTML = '';
 
     document.getElementById('btn-start').addEventListener('click', startGame);
+    document.getElementById('btn-rules').addEventListener('click', showRules);
 }
+
+function showRules() {
+    document.getElementById('rules-screen').innerHTML = "<p class='rules-text'>Are you a true movie lover? Try out our Quiz. Select your answer, click submit and keep an eye on your score. Good Luck!</p>";
+    document.getElementById('rules-screen').style.visibility = "visible";
+}
+
 //start or restart the game
 function startGame() {
+    document.getElementById('rules-screen').innerHTML = '';
+    document.getElementById('rules-screen').style.visibility = "hidden";
     document.getElementById('welcome-screen').style.visibility = 'hidden';
     document.getElementById('game-screen').style.visibility = 'visible';
+    
+    
 
     questionIndex = 0;
     correctCount = 0;
