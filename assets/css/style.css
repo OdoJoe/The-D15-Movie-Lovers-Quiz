@@ -52,6 +52,62 @@ h2 {
     color:#B4BFB0
 }
 
+#btn-start {
+    background: #b8c0c4;
+    background-image: -webkit-linear-gradient(top, #b8c0c4, #205e85);
+    background-image: -moz-linear-gradient(top, #b8c0c4, #205e85);
+    background-image: -ms-linear-gradient(top, #b8c0c4, #205e85);
+    background-image: -o-linear-gradient(top, #b8c0c4, #205e85);
+    background-image: linear-gradient(to bottom, #b8c0c4, #205e85);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #fafafa;
+    font-size: 15px;
+    padding: 3px 20px 3px 20px;
+    border: solid #3e484d 2px;
+    text-decoration: none;
+  }
+  
+  #btn-start:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+  #btn-rules {
+    background: #b8c0c4;
+    background-image: -webkit-linear-gradient(top, #b8c0c4, #205e85);
+    background-image: -moz-linear-gradient(top, #b8c0c4, #205e85);
+    background-image: -ms-linear-gradient(top, #b8c0c4, #205e85);
+    background-image: -o-linear-gradient(top, #b8c0c4, #205e85);
+    background-image: linear-gradient(to bottom, #b8c0c4, #205e85);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #fafafa;
+    font-size: 15px;
+    padding: 3px 20px 3px 20px;
+    border: solid #3e484d 2px;
+    text-decoration: none;
+  }
+  
+  #btn-start:rules {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
 /*style results text*/
 .result-text {
     color: #B4BFB0;

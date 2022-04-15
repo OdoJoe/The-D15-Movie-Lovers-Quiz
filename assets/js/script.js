@@ -60,7 +60,7 @@ let questions = [{
 //quiz final screen show results
 function showResults() {
     document.getElementById('game-screen').style.visibility = 'hidden';
-    let successMessage = ''
+    let successMessage = '';
     let percentage = (correctCount / questions.length) * 100;
     if (percentage > 50) {
        successMessage = "Well done, you're a Movie Buff";
