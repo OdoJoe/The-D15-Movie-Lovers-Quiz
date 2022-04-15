@@ -70,6 +70,7 @@ function showResults() {
     document.getElementById('results-screen').innerHTML = '<p class="result-text">' + successMessage + '</p>';
 
     let retryButton = document.createElement('button');
+    retryButton.setAttribute('id', 'retry-b');
     retryButton.innerHTML = 'Try Again';
     document.getElementById('results-screen').appendChild(retryButton);
     retryButton.addEventListener('click', resetPage);
@@ -156,6 +157,7 @@ function showQuestion(index) {
 
     let thisQuestionButton = document.createElement('button');
     thisQuestionButton.innerHTML = 'submit';
+    thisQuestionButton.setAttribute('id', 'submit-q');
     document.getElementById('game-screen').appendChild(thisQuestionButton);
     thisQuestionButton.addEventListener('click', handleAnswer);
     showAnswerCounters();
