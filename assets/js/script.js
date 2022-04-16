@@ -63,7 +63,7 @@ function showResults() {
     let successMessage = '';
     let percentage = (correctCount / questions.length) * 100;
     if (percentage > 50) {
-       successMessage = "Well done, you're a Movie Buff";
+        successMessage = "Well done, you're a Movie Buff";
     } else {
         successMessage = "Hard Luck, Try again";
     }
@@ -89,13 +89,13 @@ function showAnswerCounters() {
 function recordAnswer() {
     let options = document.getElementsByName('option');
     let userAnswer = '-1';
-    for (i = 0; i < options.length; i++) {
+    for (let i = 0; i < options.length; i++) {
         if (options[i].checked === true)
             userAnswer = options[i].value;
     }
-    
-    
-    if (userAnswer == questions[questionIndex].correctIndex){
+
+
+    if (userAnswer == questions[questionIndex].correctIndex) {
         correctCount++;
     } else {
         incorrectCount++;
@@ -106,7 +106,7 @@ function recordAnswer() {
 function handleAnswer() {
     let options = document.getElementsByName('option');
     let userSubmittedAnswer = false;
-    for (i = 0; i < options.length; i++) {
+    for (let i = 0; i < options.length; i++) {
         if (options[i].checked === true)
             userSubmittedAnswer = true;
     }
@@ -129,14 +129,14 @@ function handleAnswer() {
 function showQuestion(index) {
     document.getElementById('game-screen').innerHTML = "";
     let questionDiv = document.createElement('div');
-    questionDiv.innerHTML = "<p class='question-heading'>Question " + (questionIndex+1) + "</p><p>" + questions[questionIndex].text + "</p>";
+    questionDiv.innerHTML = "<p class='question-heading'>Question " + (questionIndex + 1) + "</p><p>" + questions[questionIndex].text + "</p>";
     document.getElementById('game-screen').appendChild(questionDiv);
 
     let questionForm = document.createElement('form');
     questionForm.className = 'answers-form';
     document.getElementById('game-screen').appendChild(questionForm);
 
-    for (i = 0; i < questions[index].options.length; i++) {
+    for (let i = 0; i < questions[index].options.length; i++) {
         let thisOptionRadio = document.createElement('input');
         thisOptionRadio.type = 'radio';
         thisOptionRadio.id = 'option' + index + '-' + i;
@@ -185,8 +185,8 @@ function startGame() {
     document.getElementById('rules-screen').style.visibility = "hidden";
     document.getElementById('welcome-screen').style.visibility = 'hidden';
     document.getElementById('game-screen').style.visibility = 'visible';
-    
-    
+
+
 
     questionIndex = 0;
     correctCount = 0;
@@ -199,7 +199,7 @@ function showWelcome() {
     document.getElementById('welcome-screen').style.visibility = 'visible';
 }
 
-function resetPage(){
+function resetPage() {
     initialisePage();
     showWelcome();
 }
