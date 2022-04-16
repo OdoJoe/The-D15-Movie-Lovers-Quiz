@@ -1,108 +1,107 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# D15 Movie Lovers Quiz
+This is the comapnion quiz site to the D15 Movie Lovers Club. View the live project here: 
 
-Welcome Joe O'Donohoe,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# User Experience UX
+- ## User Stories
+- ### <u>First Time Visitor Goals</u>
+* As a first time visitor I want to see a simple, uncluttered easy to use quiz game.
+* I want the questions easy to read and clear how to select and submit the answer.
+* I want to see my question scores and to know when the quiz has ended.
 
-## Gitpod Reminders
+- ### <u>Returning Visitor Goals</u>
+* As a returning visitor I may want to join the club and I want to see that line of navigation clearly displayed.
+* The links to the clubs main page should be clear and open in a new tab should I want to continue with the quiz later.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- ### <u>Frequent User Goals</u>
+* As a frequent user I want to see questions updated very regularly and have the quiz expanded to include more aspects of the club (include special quizes related to recent screenings with the club)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+# Design
+- ### <u>Colour Scheme</u> 
+* The main page background colour is #2e2931 and the game title a lighter #B4BFB0
+* The game screen div was coloured #246858 with a border colour of standard red.
+* The buttons were coloured differently with a view to make them prominent against the background colours but also with an aim to make them seem part of the overall scheme. The idea of the colour scheme was to create the dimly light, greens and greys usually associated with a trip to an old cinema.
+* The colour schemes were selected with the help of colormind.io and mycolor.space.
 
-Another blue button should appear to click: _Open Browser_.
+- ### <u>Typography</u> 
+* Sans-serif is used throughout the site to keep in style with the D15 Movie Lovers Club (the hypothetical club created for my first portfolio project)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- ### <u>Imagery</u>
+* No images were used in this site. However it is the developers plan to add image based questions at a later date.
 
-A blue button should appear to click: _Make Public_,
+- ### <u>Wireframes</u>
+- All Devices
+    
+- Desktop
+    
+- Tablet
+   
 
-Another blue button should appear to click: _Open Browser_.
+- Mobile
+   
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- ### <u>Features</u>
+* Naturally responsive design for a range of devices from Phones to tablets to desktops. The site is naturally responsive and didnt require media queries to force responsive design to different screen sizes.
+* Nav links display underlined when on the target page.
+* Nav links contain a Hover attribute.
+* join us button changes colour when the cursor hovers 
 
-To log into the Heroku toolbelt CLI:
+# Technologies used
+* HTML
+* CSS
+* Hover
+* Git Pod
+* Git Hub
+* Balsamiq
+* mycolor.space
+* CSS Button Generator
+* ami.responsivedesign.is
+* JSHint
+* CSS Jigsaw validator
+* HTML W3 Validator
+* educative.io
+* W3 Docs
+* W3 Schools
+* StackOverflow
+* Code Institute Course Content, primarily the Javascript module including teh Love Maths walkthrough project
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- ### <u>Testing</u>
+* HTML validation - 
+* CSS validation - 
+* JavaScript validation - 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# <u>Testing User Stories</u>
+## First Time Visitor
+* User is presented with the Start Quiz and Rules buttons clearly. Also the link to the club main page is clearly visible.
+* Once the game starts teh questions, answers and submit button are neatly contained in a game screen clearly identifiable.
+* Correct scores and Incorrect scores are also clealry displayed
 
-------
+# Returning Visitor
+* Navigation links are clear and feature a hover display to help with users if they want to visit the clubs main page.
+* The button to the clubs sign up page is also prominent and featurs a hover display. It links to the clubs sign up page in a separate tab.
 
-## Release History
+# Frequent Visitor
+* The questions should be updated regularly to service the club members as well as potential new members.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Further Testing
+* The site was tested on all contemporary browsers including Google Chrome, Microsoft Edge and Safari browsers.
+* The website was viewed on a variety of devices such as desktop, laptop, iOS and Android devices.
+* Complete site navigation testing was done.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- ### Deployment
+* Deployed to GitHub
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- ### Credits
+# Content
+* All content created by developer, except the button styling which was imported from CSS Button Generator
+* Colour Gradient recommendations on the buttons generated by CSS Button Generator
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- ### Acknowledgements
+* Thanks to my mentor for helpful feedback and recommendations.
+* Tutor support at Code Institute.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
