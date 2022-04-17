@@ -33,14 +33,24 @@ This is the companion quiz site to the D15 Movie Lovers Club. View the live proj
 
 - ### <u>Wireframes</u>
 - All Devices
+![responsive design example on different devices](documentation/wireframes/responsive-design.png)
     
 - Desktop
-    
+![start screen on desktop](documentation/wireframes/start-game-desktop.png)
+![question screen on desktop](documentation/wireframes/questions-desktop.png)
+![finish game screen on desktop](documentation/wireframes/finish-game-desktop.png)
+![rules screen on desktop](documentation/wireframes/rules-desktop.png)
 - Tablet
-   
+![start screen on tablet](documentation/wireframes/start-game-tablet.png)
+![question screen on tablet](documentation/wireframes/questions-tablet.png)
+![finish game screen on tablet](documentation/wireframes/finish-game-tablet.png)
+![rules screen on tablet](documentation/wireframes/rules-tablet.png)
 
 - Mobile
-   
+![start screen on mobile](documentation/wireframes/start-game-phone.png)
+![question screen on mobile](documentation/wireframes/questions-phone.png)
+![finish game screen on mobile](documentation/wireframes/finish-game-phone.png)
+![rules screen on mobile](documentation/wireframes/rules-phone.png)
 
 - ### <u>Features</u>
 * The quiz is displayed dynamically. The user experiences "page navigation" however in reality I am simply setting the style.visibility attribute of Divs to simulate page navigation.
@@ -48,11 +58,12 @@ This is the companion quiz site to the D15 Movie Lovers Club. View the live proj
 * User input validation is achieved via event listeners.
 * Naturally responsive design for a range of devices from Phones to tablets to desktops. The site is naturally responsive and didn't require media queries to force responsive design to different screen sizes.
 * Nav buttons and link contain a Hover attribute.
-* join us button changes colour when the cursor hovers. 
+* Join us button changes colour when the cursor hovers. 
 
 # Technologies used
 * HTML
 * CSS
+* Javascript
 * Hover
 * Git Pod
 * Git Hub
@@ -75,12 +86,12 @@ This is the companion quiz site to the D15 Movie Lovers Club. View the live proj
 # <u>Testing User Stories</u>
 ## First Time Visitor
 * User is presented with the Start Quiz and Rules buttons clearly. Also the link to the club main page is clearly visible.
-* Once the game starts teh questions, answers and submit button are neatly contained in a game screen clearly identifiable.
-* Correct scores and Incorrect scores are also clealry displayed
+* Once the game starts the questions, answers and submit button are neatly contained in a game screen clearly identifiable.
+* Correct scores and Incorrect scores are also clearly displayed
 
 # Returning Visitor
-* Navigation links are clear and feature a hover display to help with users if they want to visit the clubs main page.
-* The button to the clubs sign up page is also prominent and featurs a hover display. It links to the clubs sign up page in a separate tab.
+* Navigation links are clear and feature a hover display to help with users if they want to visit the club's main page.
+* The button to the club's sign up page is also prominent and features a hover display. It links to the club's sign up page in a separate tab.
 
 # Frequent Visitor
 * The questions should be updated regularly to service the club members as well as potential new members.
@@ -89,6 +100,7 @@ This is the companion quiz site to the D15 Movie Lovers Club. View the live proj
 * The site was tested on all contemporary browsers including Google Chrome, Microsoft Edge and Safari browsers.
 * The website was viewed on a variety of devices such as desktop, laptop, iOS and Android devices.
 * Complete site navigation testing was done.
+* Further testing with family and friends
 
 # Deployment
 ### GitHub Pages
@@ -128,12 +140,12 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 * W3 Docs - helped with javascript code
 * W3 Schools - helped with HTML, CSS and Javascript code
 * StackOverflow - Helped with solving coding problems
-* Code Institute Course Content, primarily the Javascript module including teh Love Maths walkthrough project
+* Code Institute Course Content, primarily the Javascript module including the Love Maths walkthrough project
 * Quiz and page built using HTML, CSS and Javascript
 * Code is naturally responsive without the need for media queries
 
 # Content
-* All content created by developer, except the button styling which was imported from CSS Button Generator
+* All content created by developer, except the button styling which was created on and imported from CSS Button Generator
 * All questions are original and written by developer
 
 # Acknowledgements
